@@ -1,17 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main ()
 {
-	int num=5,num2;
+	float num=5,num2;
 	printf ("Ingresa un numero");
-	scanf ("%d",&num2);
-	if  (num!=num2)
+	scanf ("%f",&num2);
+	if (num2<num)
 	{
-		printf("Es incorrecto");			
+		printf("Es menor");
 	}
-	else
+	else if (num2>num)
+	{
+		printf("Es mayor");
+	}
+	else if (num2=num)
 	{
 		printf("Es correcto");
 	}
-	return 0; 
+		
+	return 0;
 }
